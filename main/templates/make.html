@@ -3,9 +3,10 @@
 {% block sec_navigation %}
 <nav id="makeNavigation">
 	<ul id="navigationMake"> 
-		<li class="menuMake"><a  href="htmltest.html">step 1</a></li>
-		<li class="menuMake" id="activeMake"><a  href="#">step 2</a></li> 
-		<li class="menuMake"><a  href="comment.html">step 3</a></li>
+		<li class="menuMake" id="activeMake"><a  href="/make">step 1</a></li>
+		<li class="menuMake" ><a  href="/step2">step 2</a></li> 
+		<li class="menuMake"><a  href="/step3">step 3</a></li>
+		<li class="menuMake"><a  href="/publish">publish</a></li>
 	</ul>
 </nav> 
 {% endblock %}
@@ -14,11 +15,19 @@
 <section id="content">
 	<div class="step" id="step1" >
 		<div class="title">
-			Upload your images & Align Them
+			Upload your images & Align Them <br></br>
+			(drag your image around to align it)
 		</div>
+		
 		<figure id="step1Image">
-			<img src="romas.png" />
-		<figure>
+			<img src="{{STATIC_URL}}img/romas.png" />
+		</figure>
+		<ul id="uploadContainer">
+				<li class="buttons"> <img src="{{STATIC_URL}}img/uploadBtn.png"/></li>
+				<li class="buttons"> <img src="{{STATIC_URL}}img/uploadBtn.png"/></li>
+				<li class="buttons"> <img src="{{STATIC_URL}}img/uploadBtn.png"/></li>
+		</ul>
+		
 	</div>
 </section>
 {% endblock %}
