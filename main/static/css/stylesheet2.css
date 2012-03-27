@@ -187,7 +187,107 @@ text-align: center;
 		padding-left: 60px;
 	
 	}
+/*//////Step2//////////////////////////////////////////////////////////////////////*/
+#slideshow {
+	padding-left: 150px;
+}
+
+.slides {
+	display:inline;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#imgs {
+	float:left;
+}
+
+#arrowLeft {
+	float: left;
+	padding-top: 70px;
+}
+
+#arrowRight {
+	padding-top: 70px;
+}
+
+.clear {
+		clear: both;
+}
+
+
+#backgroundText {
+	padding-top: 80px;
+	padding-left: 300px;	
+	width: 445px;
+	padding-bottom: 30px;
+	
+}
+
+#TextTitle {
+
+	width: 250px;
+
+}
+
+/*//Step 3//////////////////////////////////////////////////////////////////////////*/
+#textImage {
+	padding-left:30%;
+	padding-bottom: 20px;
+}
+
+#yourText {
+	position: relative;
+	padding-left: 30%;
+	left: 30%;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*///Publish/////////////////////////////////////////////////////////////////////////*/
+
+#publishImage {
+	padding-left: 30%;
+	padding-bottom: 20px;
+}
+
+#yourName {
+	margin-left: 30%;
+	width: 235px;
+	margin-bottom: 20px;
+	margin-right: 24px;
+}
+
+#yourTags {
+	width: 235px;
+
+}
+
+.share{ 
+	display: inline;
+}
+
+#Done {
+	font-family: Orator Std;
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 30px;
+
+}
+
+#shareBtns { 
+		padding-left: 45%;
+}
+
+
 /*////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
 
 #filterbtn {
 	position:absolute;
@@ -195,7 +295,7 @@ text-align: center;
 	top:100px;
 }
 
-#textarea {
+.textarea {
 	font-family: Orator Std;
 	font-size:11px;
 	}
