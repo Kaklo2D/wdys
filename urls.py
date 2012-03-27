@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^$', views.main),
     url(r'^make/$', views.make),
     url(r'^comment/$', views.comment),
+    url(r'^upload/$', views.upload),
 )

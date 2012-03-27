@@ -152,3 +152,7 @@ LOGGING = {
         },
     }
 }
+
+FIXTURE_DIRS = (
+    "E:/University/Design of WWW Services/Project/wdys/main/fixtures"                
+)                
