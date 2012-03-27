@@ -154,15 +154,39 @@ text-align: center;
 
 
 /*////////////////////////////////////////////////////////////////////////////*/
-.title {
-	font-family: Orator Std;
-	font-size: 20px;
-	
-	
+.step {
+	background-color:white;
+	overflow: auto;
 }
 
+.title {
+	font-family: Orator Std;
+	font-size: 12px;
+	text-align:center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+/*/////Step1///////////////////////////////////////////////////////////////////////*/
+	#step1Image {
+		position:inherit;
+		padding-bottom: 22px;
+		padding-left: 35%;
+	}
+	
+	#uploadContainer {
+		padding-top: 10px;
+		padding-left: 35%;
+		width:100%;
+		}
 
 
+	.buttons {
+		display: inline;
+		float: left;
+		padding-left: 60px;
+	
+	}
 /*////////////////////////////////////////////////////////////////////////////*/
 
 #filterbtn {
