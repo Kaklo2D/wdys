@@ -1,0 +1,257 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////*/
+ body
+{
+background-color:#f2f2f2;
+height: 700px;
+z-index: -10;
+}
+
+#gloabalNavigation {
+    background-color: #343840;
+    bottom: 0;
+    padding: 10px;
+    height: 20px;
+    position: relative;
+    top: 25px;
+    left: 0;
+    
+    }
+
+#logo {
+	float: left;
+	position: absolute;
+	z-index: 10;
+
+}
+
+#navigation {
+    display: block;
+    left: 230px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+.menu {
+display: inline;
+padding:12px;
+}
+
+.menu, a { 
+font-family: Orator Std,georgia;
+font-size: 0.875em;
+color: white;
+text-decoration: none;
+text-align: center;
+}
+
+.menu:hover {
+	background-color: #5c6066;
+}
+
+.menu:active {
+	background-color: #5c6066;
+
+}	
+
+#active {
+	background-image: url('Butttons/btn_down.png');
+}	
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+#makeNavigation {
+	
+ 	background-color: #ebbc78;
+    bottom: 0;
+    padding: 10px;
+    height: 10px;
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+#navigationMake {
+	display: block;
+    left: 230px;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+}
+
+
+.menuMake {
+display: inline;
+padding:12px;
+}
+
+.menuMake, a { 
+font-family: Orator Std,georgia;
+font-size: 0.875em;
+color: white;
+text-decoration: none;
+text-align: center;
+}
+
+.menuMake:hover {
+	color: #343840;
+}
+
+.menuMake:active {
+	color: #343840;
+}	
+
+#activeMake {
+	color: #343840;
+}	
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+.title {
+	font-family: Orator Std;
+	font-size: 20px;
+	
+	
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+
+#filterbtn {
+	position:absolute;
+	left: 900px;
+	top:100px;
+}
+
+#textarea {
+	font-family: Orator Std;
+	font-size:11px;
+	}
+	
+#content {
+
+	width:100%;
+	margin-top: 85px;
+	z-index:1;
+	}
+	
+	
+#gallery {
+   
+    height: 100%;
+    width: 98.5%;
+    background-color: white;
+    position: absolute;
+    z-index:0;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    padding-left: 30px;
+    overflow: hidden;
+    
+}
+
+#gallery ul{
+    /* This position the ul content in the middle of the gallery*/
+    margin-left:0px; 
+}
+
+#gallery ul li {
+    /* In order to create the proper effect with hover we should use display inline-table
+        This will display the big picture right next to its thumbnail
+    */
+    list-style:none; 
+    display:inline-table; 
+ }
+ 
+ 
+ #gallery ul li .pic{
+    /* The the opacity to 0 to create the fadeOut effect*/
+   opacity:0;
+   visibility:hidden; 
+   position:absolute; 
+	margin-top:-50px; 
+   margin-left:-150px; 
+   /*shadow box effect in Safari and Chrome*/
+  
+}
+
+#gallery ul li .mini:hover{
+    cursor:pointer;
+}
+
+
+#gallery ul li:hover .pic {
+    /* width and height is how much the picture is going to growth with the effect */
+   width:200px; 
+   height:200px;
+   opacity:1; 
+   visibility:visible; 
+   float:right;
+}
+
+#content2 {
+	width:100%;
+	background: white;
+	margin-top: 85px;
+	padding-top: 15px;
+	padding-bottom:15px;
+	position: absolute;
+	bottom: 50px;
+	z-index:50;
+	}
+	
+.description {
+	margin-left: 250px;
+	font-family: Georgia;
+	font-size: 0.875em;
+	width: 60%;
+}
+	
