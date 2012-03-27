@@ -18,7 +18,7 @@ def make(request):
 def comment(request):
 #    try:
 #        tag = Tag.objects.get(pk=1)
-#        print(tag)
+#        print(tag.name)
 #    except ObjectDoesNotExist:
 #        print "Either the entry or blog doesn't exist."
     t = loader.get_template('comment.html')
