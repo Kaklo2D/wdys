@@ -78,6 +78,7 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     "/Users/georgiapanagiotidou/wdys/main/static/",
+    os.path.join(PWD, "main/static/"),
     
 )
 
@@ -124,6 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'wdys.main',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -152,3 +154,8 @@ LOGGING = {
         },
     }
 }
+
+FIXTURE_DIRS = (
+    "E:/University/Design of WWW Services/Project/wdys/main/fixtures",
+    os.path.join(PWD, "main/fixtures/"),                
+)                

@@ -18,8 +18,12 @@ urlpatterns = patterns('',
     url(r'^$', views.main),
     url(r'^make/$', views.make),
     url(r'^comment/$', views.comment),
+<<<<<<< HEAD
     url(r'^upload/$', views.upload),
-    url(r'^step2/$', views.step2),
-    url(r'^step3/$', views.step3),
-    url(r'^publish/$', views.publish),
+||||||| merged common ancestors
+=======
+	url(r'^step2/$', views.step2),
+	url(r'^step3/$', views.step3),
+	url(r'^publish/$', views.publish),
+>>>>>>> 8c0ee58f77b68e5b3f94ace941e58a64a9a49994
 )
