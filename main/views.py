@@ -20,3 +20,18 @@ def comment(request):
     t = loader.get_template('comment.html')
     c = RequestContext(request)
     return HttpResponse(t.render(c))
+    
+def step2(request):
+    t = loader.get_template('step2.html')
+    c = RequestContext(request)
+    return HttpResponse(t.render(c))
+    
+def step3(request):
+    t = loader.get_template('step3.html')
+    c = RequestContext(request)
+    return HttpResponse(t.render(c))
+    
+def publish(request):
+    t = loader.get_template('publish.html')
+    c = RequestContext(request)
+    return HttpResponse(t.render(c))

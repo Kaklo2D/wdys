@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block sec_navigation %}
+<nav id="makeNavigation">
+	<ul id="navigationMake"> 
+		<li class="menuMake" ><a  href="/make/">step 1</a></li>
+		<li class="menuMake" ><a  href="/step2/">step 2</a></li> 
+		<li class="menuMake"><a  href="/step3/">step 3</a></li>
+		<li class="menuMake" id="activeMake"><a  href="/publish/">publish</a></li>
+	</ul>
+</nav> 
+{% endblock %}
+{% block content %}
+<section id="content">
+	<div class="step" id="publish" >
+		<div class="title">
+			Publish
+		</div>	
+			<figure id="publishImage">
+			</figure>
+		
+			<form> 
+				<input id="textarea" name="inputtext" value="Add your Name here" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+				<input id="textarea" name="inputtext" value="Add your tags here, max 3!" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			</form>
+		</div>
+		
+		<div id="Done">
+			DONE!
+		</div>
+		
+		<ul id="shareBtns">
+			<li> <img src="downloadBtn.png"/></li>
+			<li> <img src="facebookBtn.png"/></li>
+			<li> <img src="twittweBtn.png"/></li>
+		</ul>
+</section>
+{% endblock %}

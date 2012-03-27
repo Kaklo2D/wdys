@@ -18,4 +18,7 @@ urlpatterns = patterns('',
     url(r'^$', views.main),
     url(r'^make/$', views.make),
     url(r'^comment/$', views.comment),
+	url(r'^step2/$', views.step2),
+	url(r'^step3/$', views.step3),
+	url(r'^publish/$', views.publish),
 )

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block sec_navigation %}
+<nav id="makeNavigation">
+	<ul id="navigationMake"> 
+		<li class="menuMake" ><a  href="/make/">step 1</a></li>
+		<li class="menuMake" ><a  href="/step2/">step 2</a></li> 
+		<li class="menuMake" id="activeMake"><a  href="/step3/">step 3</a></li>
+		<li class="menuMake"><a  href="/publish/">publish</a></li>
+	</ul>
+</nav> 
+{% endblock %}
+{% block content %}
+<section id="content">
+	<div class="step" id="step3" >
+		<div class="title">
+			Choose your Text
+		</div>
+		
+		<figure id="step3Image">		
+			
+		</figure>
+		
+		<form>
+			<input id="textarea" name="inputtext" value="Add your text for the postcard here!" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+				
+			</input>
+		</form>
+	</div>
+</section>
+{% endblock %}
