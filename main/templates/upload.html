@@ -1,7 +1,52 @@
 {% extends "base.html" %}
 
+{% block head %}
+
+<script type="text/javascript" src="{{STATIC_URL}}js/uploadify/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/uploadify/swfobject.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}js/uploadify/jquery.uploadify.v2.1.4.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+	  $('#file_upload').uploadify({
+	    'uploader'  : '{{STATIC_URL}}js/uploadify/uploadify.swf',
+	    'script'    : 'http://localhost:8000/uploadImages/',
+	    'cancelImg' : '{{STATIC_URL}}js/uploadify/cancel.png',
+	    'folder'    : '{{STATIC_URL}}js/uploads',
+	    'auto'      : true,
+	    'multi'     : true,
+	    'queueSizeLimit' : 3,
+	    'onError': function (event, queueID ,fileObj, errorObj) {
+            var msg;
+            if (errorObj.status == 404) {
+               alert('Could not find upload script. Use a path relative to: '+'<?= getcwd() ?>');
+               msg = 'Could not find upload script.';
+            } else if (errorObj.type === "HTTP")
+               msg = errorObj.type+": "+errorObj.info;
+            else if (errorObj.type ==="File Size")
+               msg = fileObj.name+'<br>'+errorObj.type+' Limit: '+Math.round(errorObj.sizeLimit/1024)+'KB';
+            else
+               msg = errorObj.type+": "+errorObj.text;
+            alert(msg);
+            $("#fileUpload" + queueID).fadeOut(250, function() { $("#fileUpload" + queueID).remove()});
+            return false;
+            },
+
+	  });
+	});
+	
+</script>
+
+<link rel="stylesheet" href="{{STATIC_URL}}css/tempstyle.css" type="text/css" /> 
+
+{% endblock %}
+
 {% block content %}
 <section id="content">
-	Upload
+	<h2>File upload</h2>
+	
+	<input id="file_upload" type="file" name="Filedata" />
+	<a href="javascript:$('#file_upload').uploadifyUpload();">Upload Files</a>
 </section>
 {% endblock %}
+

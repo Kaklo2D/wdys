@@ -1,16 +1,3 @@
 [
-  {
-    "model": "main.Tag",
-    "pk": 1,
-    "fields": {
-      "name": "Tag01"
-    }
-  },
-  {
-    "model": "main.Tag",
-    "pk": 2,
-    "fields": {
-      "name": "Tag02"
-    }
-  }
+  
 ]
