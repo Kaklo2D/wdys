@@ -4,8 +4,8 @@
 hs.graphicsDir = 'static/js/highslide/graphics/';
 hs.showCredits = false;
 hs.outlineType = 'custom';
-hs.dimmingOpacity = 0.75;
 hs.align = 'center';
+hs.dimmingOpacity = 0.75;
 hs.headingOverlay.position = 'leftpanel';
 
 
